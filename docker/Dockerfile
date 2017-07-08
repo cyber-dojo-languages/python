@@ -8,9 +8,17 @@ RUN apt-get update && apt-get install --yes \
   libbz2-dev \
   wget
 
-RUN wget http://www.python.org/ftp/python/3.3.5/Python-3.3.5.tar.xz
-RUN tar xJf ./Python-3.3.5.tar.xz
-RUN cd ./Python-3.3.5 && ./configure --prefix=/opt/python3.3
-RUN cd ./Python-3.3.5 && make
-RUN cd ./Python-3.3.5 && make install
-RUN ln -s /opt/python3.3/bin/python3.3 /bin/python
+ARG BASE_VERSION=3.5
+ARG VERSION=${BASE_VERSION}.3
+
+RUN wget http://www.python.org/ftp/python/${VERSION}/Python-${VERSION}.tar.xz \
+  && tar xJf ./Python-${VERSION}.tar.xz \
+  && cd ./Python-${VERSION} \
+  && ./configure --prefix=/opt/python${BASE_VERSION} \
+  && make \
+  && make install \
+  && ln -s /opt/python${BASE_VERSION}/bin/python${BASE_VERSION} /bin/python3
+
+RUN apt-get install -y python3-pip
+
+RUN pip3 install -U numpy scipy panda datetime
