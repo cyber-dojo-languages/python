@@ -7,4 +7,4 @@ RUN apt-get install --yes \
   python3.6 \
   python3-pip
 
-RUN pip3 install --upgrade numpy scipy panda datetime
+RUN pip3 install --upgrade numpy scipy panda datetime pep8
