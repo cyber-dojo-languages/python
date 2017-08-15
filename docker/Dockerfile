@@ -8,4 +8,4 @@ RUN apt-get install --yes \
   python3-pip
 
 RUN pip3 install --upgrade numpy scipy panda datetime pep8
-RUN ln -s /usr/bin/python3 /usr/bin/python
+RUN ln -s /usr/bin/python3.6 /usr/bin/python
