@@ -1,3 +1,3 @@
-# python 3.5.3
+# python 3.6.1
 
-![Build Status](https://travis-ci.org/cyber-dojo-languages/python-3.5.3.svg?branch=master)
+![Build Status](https://travis-ci.org/cyber-dojo-languages/python-3.6.1.svg?branch=master)
