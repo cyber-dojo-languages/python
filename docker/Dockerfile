@@ -9,3 +9,5 @@ RUN apt-get install --yes \
 
 RUN pip3 install --upgrade numpy scipy panda datetime pep8
 RUN ln -s /usr/bin/python3.6 /usr/bin/python
+
+RUN python --version | grep -q 3.6.1
