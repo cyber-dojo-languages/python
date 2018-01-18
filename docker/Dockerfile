@@ -1,8 +1,7 @@
-FROM  cyberdojofoundation/ubuntu-build-essential:16.04
+FROM  cyberdojofoundation/ubuntu-build-essential:18.04
 LABEL maintainer=jon@jaggersoft.com
 
 RUN apt-get install --yes software-properties-common python-software-properties \
- && add-apt-repository ppa:deadsnakes/ppa \
  && apt-get update \
  && apt-get install --yes python3.6 curl \
  && curl https://bootstrap.pypa.io/get-pip.py | python3.6
