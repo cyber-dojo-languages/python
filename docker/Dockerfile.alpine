@@ -14,5 +14,3 @@ RUN apk add --no-cache --virtual .build-deps \
   && pip install panda \
   && pip install pep8 \
   && apk del .build-deps
-
-RUN python --version | grep -q 3.6.4
