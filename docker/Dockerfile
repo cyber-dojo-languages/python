@@ -1,4 +1,4 @@
-FROM  python:latest
+FROM  python
 LABEL maintainer=jon@jaggersoft.com
 
 RUN apt-get update
