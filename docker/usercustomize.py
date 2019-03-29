@@ -1,3 +1,3 @@
-# using the stateless-runner so dont create .pyc files
+# The runner is stateless so dont create .pyc files
 import sys
 sys.dont_write_bytecode = True
