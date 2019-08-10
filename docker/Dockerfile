@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install --yes coreutils bash tar file
 
 LABEL maintainer=jon@jaggersoft.com
 
-RUN apt-get update
-RUN pip3 install --upgrade numpy scipy panda datetime pep8
+RUN apt-get update \
+ && pip3 install --upgrade pip numpy scipy panda datetime pycodestyle
 
 COPY usercustomize.py /usr/local/lib/python3.6/site-packages
