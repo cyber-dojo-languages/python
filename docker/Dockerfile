@@ -13,5 +13,4 @@ RUN apt-get update && apt-get install --yes coreutils bash tar file
 
 LABEL maintainer=jon@jaggersoft.com
 
-RUN apt-get update \
- && pip3 install --upgrade pip numpy scipy panda datetime coverage pycodestyle
+RUN pip3 install --upgrade pip numpy scipy panda datetime coverage pycodestyle
