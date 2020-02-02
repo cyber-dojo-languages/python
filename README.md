@@ -1,7 +1,4 @@
-
 [![CircleCI](https://circleci.com/gh/cyber-dojo-languages/python.svg?style=svg)](https://circleci.com/gh/cyber-dojo-languages/python)
-
-[Version=3.8.1](https://github.com/cyber-dojo-languages/python/blob/master/check_version.sh)
 
 # image_name="cyberdojofoundation/python"
 
