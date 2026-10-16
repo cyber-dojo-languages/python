@@ -2,3 +2,6 @@ FROM python:slim-bookworm
 LABEL maintainer=jon@jaggersoft.com
 
 RUN pip3 install --upgrade pip numpy scipy panda datetime coverage pycodestyle mypy
+
+COPY install.sh .
+RUN ./install.sh && rm ./install.sh
